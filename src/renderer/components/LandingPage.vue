@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper">
 
-    Current version: <span id="version">vX.Y.Z</span>
+    Current version: <span id="version">1.0.9</span>
     <div id="messages">messages</div>
 
     <img id="logo" src="~@/assets/logo.png" alt="electron-vue">
