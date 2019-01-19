@@ -45,6 +45,7 @@ function createWindow () {
     if (process.env.NODE_ENV !== 'development') {
       //  require('update-electron-app')()
     }
+    mainWindow.webContents.openDevTools();
 }
 
 app.on('ready', createWindow)
