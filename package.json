@@ -53,6 +53,8 @@
           "publishAutoUpdate":true
         }
       ],
+      "certificateFile":"Report_TemporaryKey.pfx",
+      "publisherName": "lile",
       "target": [
         {
           "target": "nsis",
