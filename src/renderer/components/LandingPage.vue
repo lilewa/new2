@@ -51,6 +51,8 @@
         },
     },
       mounted(){
+          /*let version = window.location.hash.substring(1);
+          console.log(version)*/
         this.$electron.ipcRenderer.on('message', function(event, text) {
             var container = document.getElementById('messages');
             var message = document.createElement('div');

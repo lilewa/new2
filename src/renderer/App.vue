@@ -6,7 +6,13 @@
 
 <script>
   export default {
-    name: 'new2'
+    name: 'new2',
+      mounted(){
+          this.$electron.ipcRenderer.on('message', function(event, text) {
+              console.log(text);
+
+          })
+      }
   }
 </script>
 
