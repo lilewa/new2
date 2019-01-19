@@ -47,7 +47,7 @@
       },
         go(){
           console.log('geng')
-            this.$electron.ipcRenderer.send('geng', text);
+            this.$electron.ipcRenderer.send('geng');
         },
     },
       mounted(){
