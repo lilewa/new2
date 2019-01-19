@@ -1,5 +1,6 @@
 <template>
   <div id="wrapper">
+<button @click="go">gengxin</button>
 
     Current version: <span id="version">1.0.9</span>
     <div id="messages">messages</div>
@@ -43,7 +44,11 @@
     methods: {
       open (link) {
         this.$electron.shell.openExternal(link)
-      }
+      },
+        go(){
+          console.log('geng')
+            this.$electron.ipcRenderer.send('geng', text);
+        },
     },
       mounted(){
         this.$electron.ipcRenderer.on('message', function(event, text) {

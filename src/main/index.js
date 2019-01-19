@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow,ipcMain } from 'electron'
 const log = require('electron-log');
 const {autoUpdater} = require("electron-updater");
 
@@ -46,6 +46,7 @@ function createWindow () {
       //  require('update-electron-app')()
     }
     mainWindow.webContents.openDevTools();
+
 }
 
 app.on('ready', createWindow)
@@ -108,6 +109,10 @@ autoUpdater.on('update-downloaded', (info) => {
     sendStatusToWindow('Update downloaded');
 });
 
-app.on('ready', function()  {
+/*app.on('ready', function()  {
     autoUpdater.checkForUpdatesAndNotify();
-});
+});*/
+
+ipcMain.on('geng', () => {
+    autoUpdater.checkForUpdatesAndNotify();
+})
