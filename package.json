@@ -1,6 +1,6 @@
 {
   "name": "new2",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "author": "lile <524612604@qq.com>",
   "description": "An electron-vue project",
   "license": null,
@@ -50,7 +50,7 @@
         {
           "provider": "github",
           "releaseType": "release",
-          "publishAutoUpdate":true,
+
           "owner": "lilewa",
           "repo": "new2"
         }
