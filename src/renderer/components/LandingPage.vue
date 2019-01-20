@@ -41,17 +41,20 @@
   export default {
     name: 'landing-page',
     components: { SystemInformation },
+      data(){
+        return{
+            notification :{
+                title: 'Basic Notification',
+                body: 'Short message part'
+            }
+        }
+      },
     methods: {
       open (link) {
         this.$electron.shell.openExternal(link)
       },
         go(){
-            const notification = {
-                title: 'Basic Notification',
-                body: 'Short message part'
-            }
-            const myNotification = new window.Notification(notification.title, notification)
-
+            const myNotification = new window.Notification(this.notification.title, this.notification)
             myNotification.onclick = () => {
                 console.log('Notification clicked')
             }
