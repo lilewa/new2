@@ -1,6 +1,6 @@
 {
   "name": "new2",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "author": "lile <524612604@qq.com>",
   "description": "An electron-vue project",
   "license": null,
@@ -19,7 +19,7 @@
   },
   "build": {
     "productName": "new2",
-    "appId": "com.example.yourapp",
+    "appId": "com.example.yourappwl",
     "directories": {
       "output": "build"
     },
