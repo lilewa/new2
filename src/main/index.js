@@ -206,6 +206,7 @@ app.on('ready', function()  {
     autoUpdater.checkForUpdatesAndNotify();
 });
 ipcMain.on('geng', () => {
+    autoUpdater.emit('update-available',['chu'])
     autoUpdater.checkForUpdatesAndNotify();
     win.webContents.send('message', '回调');
 })
