@@ -120,5 +120,6 @@ app.on('ready', () => {
 });*/
 
 ipcMain.on('geng', () => {
-    autoUpdater.checkForUpdatesAndNotify();
+  autoUpdater.checkForUpdatesAndNotify();
+    mainWindow.webContents.send('message', '回调');
 })
