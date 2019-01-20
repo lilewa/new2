@@ -1,6 +1,6 @@
 <template>
   <div id="wrapper">
-<button @click="go">gengxin</button>
+<button @click="go">gengxin2</button>
 
     Current version: <span id="version">1.0.9</span>
     <div id="messages">messages</div>
