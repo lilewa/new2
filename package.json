@@ -1,6 +1,6 @@
 {
   "name": "new2",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "author": "lile <524612604@qq.com>",
   "description": "An electron-vue project",
   "license": null,
@@ -50,7 +50,9 @@
         {
           "provider": "github",
           "releaseType": "release",
-          "publishAutoUpdate":true
+          "publishAutoUpdate":true,
+          "owner": "lilewa",
+          "repo": "new2"
         }
       ],
       "certificateFile":"Report_TemporaryKey.pfx",
