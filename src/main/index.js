@@ -185,7 +185,7 @@ app.on('ready', function() {
     // Create the Menu
     const menu = Menu.buildFromTemplate(template);
     Menu.setApplicationMenu(menu);
-
+    app.setAppUserModelId(process.execPath)
     createDefaultWindow();
 });
 app.on('window-all-closed', () => {
