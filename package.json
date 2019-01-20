@@ -1,6 +1,6 @@
 {
   "name": "new2",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "author": "lile <524612604@qq.com>",
   "description": "An electron-vue project",
   "license": null,
@@ -55,8 +55,7 @@
           "repo": "new2"
         }
       ],
-      "certificateFile":"Report_TemporaryKey.pfx",
-      "publisherName": "lile",
+
       "target": [
         {
           "target": "nsis",
