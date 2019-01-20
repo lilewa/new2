@@ -46,8 +46,15 @@
         this.$electron.shell.openExternal(link)
       },
         go(){
-          console.log('geng')
-            this.$electron.ipcRenderer.send('geng');
+            const notification = {
+                title: 'Basic Notification',
+                body: 'Short message part'
+            }
+            const myNotification = new window.Notification(notification.title, notification)
+
+            myNotification.onclick = () => {
+                console.log('Notification clicked')
+            }
         },
     },
       mounted(){
