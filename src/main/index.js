@@ -75,7 +75,10 @@ autoUpdater.on('download-progress', (progressObj) => {
 autoUpdater.on('update-downloaded', (info) => {
     sendStatusToWindow('Update downloaded');
 });
-
+autoUpdater.on('error', (ev, err) => {
+    log.error('Error in auto-updater.' + err + '|' + ev);
+    sendStatusToWindow('Error in auto-updater. ' + err);
+});
 app.on('ready', createWindow)
 
 app.on('window-all-closed', () => {
